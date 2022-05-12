@@ -1,0 +1,211 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* DEBUG */
+.debug .intro-col,
+.debug .strategy-col,
+.debug .testimonials-col,
+.debug .benefits-col,
+.debug .about-us-col
+{
+    border: 1px solid blue;
+}
+
+/***********************
+    MOBILE FIRST
+***********************/
+
+/* COMMON */
+body
+{
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container
+{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.mobile-padding
+{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.flex-container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* HEADER */
+header
+{
+    height: 80px;
+    background-color: #0084fd;
+    color: white;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.main-menu
+{
+    display: none;
+}
+
+section
+{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/*  MAIN */
+section:nth-of-type(even)
+{
+    background-color: #9792e4;
+}
+
+.col
+{
+    padding: 2rem 0;
+    margin: 1rem 0;
+}
+
+.testimonials-col
+{
+    background-color: #9792e4;
+}
+
+.benefits-col
+{
+    background-color: white;
+}
+
+
+
+/* FOOTER */
+footer
+{
+    color: white;
+    background-color: #333333;
+}
+
+/***********************
+    TABLET
+***********************/
+@media screen and (min-width:768px) {
+    /* MAIN */
+    .intro-columns
+    {
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+
+    .intro-col
+    {
+        width: calc( 100% / 3 );
+        padding: 0 1rem;
+    }
+
+    .intro-col:first-child
+    {
+        width: calc( ( 100% / 3 ) * 2 );
+    }
+
+    .benefits-columns
+    {
+        justify-content: space-between;
+    }
+
+    .benefits-col
+    {
+        width: calc( 50% - 1rem);
+    }
+
+   
+    .about-us-columns
+    {
+        justify-content: space-between;
+    }
+
+    .about-us-col
+    {
+        width: calc( 50% - 1rem);
+    }
+
+    #small .container
+    {
+        max-width: 740px;
+    }
+}
+
+/***********************
+    DESKTOP
+***********************/
+@media screen and (min-width:992px) {
+
+    /* HEADER */
+    .main-menu
+    {
+        display: block;
+    }
+
+    .burger-button
+    {
+        display: none;
+    }
+
+    /* MAIN */
+
+    #strategy .container
+    {
+        max-width: 900px;
+    }
+
+    .strategy-columns
+    {
+        justify-content: space-between;
+    }
+
+    .strategy-col
+    {
+        width: calc( 50% - 1rem );
+    }
+
+    .benefits-col
+    {
+        width: calc( ( 100% / 3 ) - 1rem);
+    }
+
+    .about-us-columns
+    {
+        justify-content: space-between;
+    }
+
+    .about-us-col:first-child
+    {
+        width: calc( 70% - 0.75rem)
+    }
+
+    .about-us-col:last-child
+    {
+        width: calc( 30% - 0.75rem)
+    }
+
+    #small .container
+    {
+        max-width: 900px;
+    }
+
+}
