@@ -13,6 +13,7 @@
 .debug .about-us-col
 {
     border: 1px solid blue;
+    border-radius: 20px;
 }
 
 /***********************
@@ -31,6 +32,12 @@ body
     margin: 0 auto;
 }
 
+img
+{
+    width: 100%;
+    display: block;
+}
+
 .mobile-padding
 {
     padding-left: 2rem;
@@ -41,6 +48,24 @@ body
 {
     display: flex;
     flex-wrap: wrap;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn
+{
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+}
+
+.btn.blue
+{
+    background-color: #0084fd;
+    color: white;
 }
 
 /* HEADER */
@@ -82,8 +107,6 @@ nav
 
 .main-menu a
 {
-    text-decoration: none;
-    color: inherit;
     padding: 0.5rem 0.5rem;
 }
 
@@ -108,15 +131,62 @@ section:nth-of-type(even)
 
 .col
 {
-    padding: 2rem 0;
+    padding: 2rem 1rem;
     margin: 1rem 0;
 }
 
+/* intro columns */
+.intro-col
+{
+    background-color: #b5ddff;
+}
+
+.intro-columns .intro-col:first-child
+{
+    padding-bottom: 0;
+}
+
+.intro-col h3
+{
+    color: #2194fd;
+    font-size: 2rem;
+}
+
+.intro-col .cards
+{
+    justify-content: center;
+}
+
+.card-text, .cards
+{
+    text-align: center;
+}
+
+.intro-col .card-text>p
+{
+    padding: 2rem 0;
+    text-align: left;
+}
+
+.intro-col img
+{
+    width: 200px;
+    padding-top: 2rem;
+}
+
+.icon
+{
+    color: #0084fd;
+    font-size: 5rem;
+}
+
+/* testimonial columns */
 .testimonials-col
 {
     background-color: #9792e4;
 }
 
+/* benefits columns */
 .benefits-col
 {
     background-color: white;
@@ -139,23 +209,44 @@ footer
         font-size: 1.5rem;
     }
 
+    /* intro columns */
     .intro-columns
     {
-        margin-left: -1rem;
-        margin-right: -1rem;
+        justify-content: space-between;
     }
 
     .intro-col
     {
-        width: calc( 100% / 3 );
-        padding: 0 1rem;
+        width: calc( ( 100% / 3 ) - 1rem);
     }
 
     .intro-col:first-child
     {
-        width: calc( ( 100% / 3 ) * 2 );
+        width: calc( ( ( 100% / 3 ) * 2 ) - 0.5rem );
     }
 
+    .intro-col:nth-child(4)
+    {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .intro-col .cards
+    {
+        justify-content: flex-start;
+    }
+
+    .card-text
+    {
+        text-align: left;
+    }
+
+    .intro-col .card-text>p
+    {
+        padding: 2rem 0;
+    }
+
+    /* benefits columns */
     .benefits-columns
     {
         justify-content: space-between;
@@ -163,7 +254,7 @@ footer
 
     .benefits-col
     {
-        width: calc( 50% - 1rem);
+        width: calc( 50% - 1rem );
     }
 
    
@@ -181,12 +272,19 @@ footer
     {
         max-width: 740px;
     }
+
+
 }
 
 /***********************
     DESKTOP
 ***********************/
 @media screen and (min-width:992px) {
+    /* COMMON */
+    .small .container
+    {
+        max-width: 900px;
+    }
 
     /* HEADER */
     .main-menu
@@ -201,6 +299,28 @@ footer
 
     /* MAIN */
 
+    /* intro columns */
+    .intro-col .cards:first-child
+    {
+        justify-content: space-between;
+    }
+
+    .intro-col .cards.large>*
+    {
+        width: calc( 50% - 1rem );
+    }
+
+    .intro-col .card-image
+    {
+        padding: 0 5rem;
+    }
+
+    .intro-col .card-text>p
+    {
+        padding: 1.5rem 0;
+    }
+
+    /* planning columns */
     #planning .container
     {
         max-width: 900px;
@@ -216,11 +336,13 @@ footer
         width: calc( 50% - 1rem );
     }
 
+    /* benefits columns */
     .benefits-col
     {
         width: calc( ( 100% / 3 ) - 1rem);
     }
 
+    /* about-us columns */
     .about-us-columns
     {
         justify-content: space-between;
@@ -228,17 +350,14 @@ footer
 
     .about-us-col:first-child
     {
-        width: calc( 70% - 0.75rem)
+        width: calc( 65% - 0.75rem)
     }
 
     .about-us-col:last-child
     {
-        width: calc( 30% - 0.75rem)
+        width: calc( 35% - 0.75rem)
     }
 
-    .small .container
-    {
-        max-width: 900px;
-    }
+    
 
 }
