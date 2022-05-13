@@ -72,6 +72,20 @@ a
     padding: 0.5rem 2.5rem;
 }
 
+.square-img-box
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.square-img-box img
+{
+    height: 100%;
+    object-fit: cover;
+}
+
 /* HEADER */
 header
 {
@@ -192,7 +206,6 @@ section:nth-of-type(even)
 /* planning columns */
 .planning-col
 {
-    justify-content: center;
     border-radius: 50px;
 }
 
@@ -256,10 +269,6 @@ section:nth-of-type(even)
 }
 
 /* testimonials columns */
-.testimonials-columns
-{
-    justify-content: center;
-}
 
 .introduction-testimonials
 {
@@ -292,20 +301,6 @@ section:nth-of-type(even)
 {
     text-align: center;
     color: white;
-}
-
-.square-img-box
-{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.square-img-box img
-{
-    height: 100%;
-    object-fit: cover;
 }
 
 .quote
@@ -355,9 +350,53 @@ section:nth-of-type(even)
 
 .benefits-col p
 {
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
 }
 
+.benefits-col .btn.violet
+{
+    padding: 0.5rem 2.5rem;
+}
+
+/* about-us columns */
+#first.about-us-col>.card-text
+{
+    line-height: 2rem;
+}
+
+#first.about-us-col h2
+{
+    color: #9792e4;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+#first.about-us-col #first-p
+{
+    padding-bottom: 2rem;
+}
+
+#position-relative
+{
+    position: relative;
+}
+
+.quotation-marks
+{
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    font-size: 3rem;
+    color: #9792e4;
+}
+
+.linkedin-contact
+{
+    color: #9792e4;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
 /* FOOTER */
 footer
 {
@@ -440,7 +479,8 @@ footer
         padding-left: 2rem;
     }
 
-    .quote {
+    .quote 
+    {
         padding: 1.5rem 0 2rem 0;
         font-size: 1.3rem;
     }
@@ -497,6 +537,16 @@ footer
         max-width: 740px;
     }
 
+    #second.about-us-col .card-image
+    {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #second.about-us-col .card-text
+    {
+        text-align: center;
+    }
 
 }
 
