@@ -6,8 +6,6 @@
 }
 
 /* DEBUG */
-.debug .intro-col,
-.debug .planning-col,
 .debug .testimonials-col,
 .debug .benefits-col,
 .debug .about-us-col
@@ -139,6 +137,7 @@ section:nth-of-type(even)
 .intro-col
 {
     background-color: #b5ddff;
+    border-radius: 20px;
 }
 
 .intro-columns .intro-col:first-child
@@ -149,21 +148,20 @@ section:nth-of-type(even)
 .intro-col h3
 {
     color: #2194fd;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
 }
 
-.cards>h3
+.intro-col .cards.large h3
 {
-    padding-bottom: 1.5rem;
+    text-align: left;
+    padding-bottom: 0;
 }
 
 .intro-col .cards
 {
     justify-content: center;
-}
-
-.card-text, .cards
-{
     text-align: center;
 }
 
@@ -184,6 +182,69 @@ section:nth-of-type(even)
     color: #0084fd;
     font-size: 5rem;
 }
+
+/* planning columns */
+.planning-col
+{
+    justify-content: center;
+    border-radius: 50px;
+}
+
+#white.planning-col 
+{
+    background-color: white;
+}
+
+#first.card-image img
+{
+    padding-bottom: 5rem;
+}
+
+.planning-col .card-image
+{
+    justify-content: center;
+}
+
+#second.card-image img
+{
+    width: 250px;
+    padding-bottom: 1rem;
+}
+
+#first.card-text>h3
+{
+    color: white;
+    font-size: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+#second.card-text
+{
+    text-align: center;
+}
+
+#second.card-text>h3
+{
+    font-size: 1.5rem;
+}
+
+#second.card-text>p
+{
+    font-style: italic;
+    padding: 2rem 0;
+}
+
+.arrow
+{
+    background-color: #9792e4;
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    line-height: 2rem;
+    text-align: center;
+}
+
 
 /* testimonial columns */
 .testimonials-col
@@ -249,6 +310,12 @@ footer
     .intro-col .card-text>p
     {
         padding: 2rem 0;
+    }
+
+    /* planning columns */
+    #first.card-image img
+    {
+        width: auto;
     }
 
     /* benefits columns */
@@ -336,11 +403,18 @@ footer
     .planning-columns
     {
         justify-content: space-between;
+        align-items: flex-end;
     }
 
     .planning-col
     {
         width: calc( 50% - 1rem );
+    }
+
+    #first.card-image img
+    {
+        width: 380px;
+        padding-bottom: 8rem;
     }
 
     /* benefits columns */
