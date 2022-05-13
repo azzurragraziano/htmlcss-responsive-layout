@@ -305,9 +305,10 @@ footer
     /* MAIN */
 
     /* intro columns */
-    .intro-col .cards:first-child
+    .intro-col .cards.large
     {
         justify-content: space-between;
+        height: 100%;
     }
 
     .intro-col .cards.large>*
@@ -318,6 +319,7 @@ footer
     .intro-col .card-image
     {
         padding: 0 5rem;
+        align-self: flex-end;
     }
 
     .intro-col .card-text>p
