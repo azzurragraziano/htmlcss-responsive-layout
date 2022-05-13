@@ -152,6 +152,11 @@ section:nth-of-type(even)
     font-size: 2rem;
 }
 
+.cards>h3
+{
+    padding-bottom: 1.5rem;
+}
+
 .intro-col .cards
 {
     justify-content: center;
