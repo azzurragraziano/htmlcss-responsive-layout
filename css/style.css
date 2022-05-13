@@ -65,6 +65,13 @@ a
     color: white;
 }
 
+.btn.violet
+{
+    background-color: #9792e4;
+    color: white;
+    padding: 0.5rem 2.5rem;
+}
+
 /* HEADER */
 header
 {
@@ -312,9 +319,43 @@ section:nth-of-type(even)
 }
 
 /* benefits columns */
+.benefits-columns
+{
+    justify-content: center;
+}
+
+.benefits-of
+{
+    color: white;
+    font-size: 2rem;
+}
+
 .benefits-col
 {
     background-color: white;
+}
+
+.benefit-number,
+.benefit
+{
+    color: #9792e4;
+    font-weight: bold;
+}
+
+.benefit-number
+{
+    font-size: 2rem;
+}
+
+.benefit
+{
+    font-size: 1.3rem;
+    padding: 1.5rem 0;
+}
+
+.benefits-col p
+{
+    padding-bottom: 1.5rem;
 }
 
 /* FOOTER */
@@ -396,7 +437,17 @@ footer
     .testimonials-col .card-text
     {
         text-align: left;
-        padding-left: 1.5rem;
+        padding-left: 2rem;
+    }
+
+    .quote {
+        padding: 1.5rem 0 2rem 0;
+        font-size: 1.3rem;
+    }
+
+    .author
+    {
+        font-size: 1.3rem;
     }
 
     /* benefits columns */
@@ -405,12 +456,32 @@ footer
         justify-content: space-between;
     }
 
+    .benefits-of
+    {
+        width: 100%;
+    }
+
+    .benefits-of>h2
+    {
+        text-align: center;
+    }
+   
     .benefits-col
     {
         width: calc( 50% - 1rem );
     }
 
-   
+    .benefit-number 
+    {
+        font-size: 3.5rem;
+    }
+
+    .benefit 
+    {
+        font-size: 1.7rem;
+    }
+  
+    /* about-us columns */
     .about-us-columns
     {
         justify-content: space-between;
@@ -503,6 +574,12 @@ footer
     {
         width: calc( ( 100% / 3 ) - 1rem);
     }
+
+    .benefit-number 
+    {
+        font-size: 5rem;
+    }
+
 
     /* about-us columns */
     .about-us-columns
