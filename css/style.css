@@ -6,7 +6,6 @@
 }
 
 /* DEBUG */
-.debug .testimonials-col,
 .debug .benefits-col,
 .debug .about-us-col
 {
@@ -195,7 +194,7 @@ section:nth-of-type(even)
     background-color: white;
 }
 
-#first.card-image img
+#first-image.card-image img
 {
     padding-bottom: 5rem;
 }
@@ -205,30 +204,34 @@ section:nth-of-type(even)
     justify-content: center;
 }
 
-#second.card-image img
+#second-image.card-image img
 {
     width: 250px;
     padding-bottom: 1rem;
 }
 
-#first.card-text>h3
+#first-text.card-text
 {
     color: white;
+}
+
+#first-text.card-text>h3
+{
     font-size: 2.5rem;
     padding-bottom: 2.5rem;
 }
 
-#second.card-text
+#second-text.card-text
 {
     text-align: center;
 }
 
-#second.card-text>h3
+#second-text.card-text>h3
 {
     font-size: 1.5rem;
 }
 
-#second.card-text>p
+#second-text.card-text>p
 {
     font-style: italic;
     padding: 2rem 0;
@@ -245,11 +248,67 @@ section:nth-of-type(even)
     text-align: center;
 }
 
+/* testimonials columns */
+.testimonials-columns
+{
+    justify-content: center;
+}
 
-/* testimonial columns */
+.introduction-testimonials
+{
+    text-align: center;
+}
+
+.introduction-testimonials>p
+{
+    padding-bottom: 2rem;
+}
+
+.introduction-testimonials>h2
+{
+    color: #9994e4;
+    padding: 2rem 0;
+}
+
 .testimonials-col
 {
     background-color: #9792e4;
+    border-radius: 50px;
+}
+
+.testimonials-col .testimonials-cards
+{
+    justify-content: center;
+}
+
+.testimonials-col .card-text
+{
+    text-align: center;
+    color: white;
+}
+
+.square-img-box
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.square-img-box img
+{
+    height: 100%;
+    object-fit: cover;
+}
+
+.quote
+{
+    padding: 1.5rem 0 2rem 0;
+}
+
+.author
+{
+    font-weight: bold;
 }
 
 /* benefits columns */
@@ -316,6 +375,28 @@ footer
     #first.card-image img
     {
         width: auto;
+    }
+
+    /* testimonials columns */
+    .testimonials-cards
+    {
+        justify-content: space-between;
+    }
+
+    .testimonials-cards .card-image
+    {
+        width: 35%;
+    }
+
+    .testimonials-cards .card-text
+    {
+        width: 65%;
+    }
+
+    .testimonials-col .card-text
+    {
+        text-align: left;
+        padding-left: 1.5rem;
     }
 
     /* benefits columns */
