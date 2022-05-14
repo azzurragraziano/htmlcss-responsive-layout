@@ -5,14 +5,6 @@
     box-sizing: border-box;
 }
 
-/* DEBUG */
-.debug .benefits-col,
-.debug .about-us-col
-{
-    border: 1px solid blue;
-    border-radius: 20px;
-}
-
 /***********************
     MOBILE FIRST
 ***********************/
@@ -70,6 +62,12 @@ a
     background-color: #9792e4;
     color: white;
     padding: 0.5rem 2.5rem;
+}
+
+.btn.white
+{
+    background-color: white;
+    color: #9792e4;
 }
 
 .square-img-box
@@ -328,6 +326,7 @@ section:nth-of-type(even)
 .benefits-col
 {
     background-color: white;
+    border-radius: 20px;
 }
 
 .benefit-number,
@@ -371,7 +370,7 @@ section:nth-of-type(even)
     padding-bottom: 2rem;
 }
 
-#first.about-us-col #first-p
+.padding
 {
     padding-bottom: 2rem;
 }
@@ -381,7 +380,7 @@ section:nth-of-type(even)
     position: relative;
 }
 
-.quotation-marks
+#position-relative>.quotation-marks
 {
     position: absolute;
     right: 0.5rem;
@@ -397,11 +396,52 @@ section:nth-of-type(even)
     font-weight: bold;
     padding-bottom: 1.5rem;
 }
+
+/* get started */
+.get-started-columns
+{
+    text-align: center;
+    color: white;
+}
+
+.start
+{
+    font-size: 0.7rem;
+    color: #b6b3ec;
+    padding-bottom: 1rem;
+}
+
+.feature
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.price
+{
+    color: #fdc15f;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.copyright>a
+{
+    text-decoration: underline;
+}
+
 /* FOOTER */
 footer
 {
     color: white;
     background-color: #333333;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+footer a 
+{
+    text-decoration: underline;
+    color: #0084fd;
 }
 
 /***********************
